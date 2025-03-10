@@ -21,9 +21,8 @@
         ];
         config = {
           # Reference the hardware configuration file dynamically
-          imports = [ /etc/nixos/hardware-configuration.nix ];
+          imports = [ ./hardware-configuration.nix ];
         };
-
       };
     };
 }
