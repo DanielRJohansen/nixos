@@ -13,7 +13,7 @@
       system = "x86_64-linux";  # Adjust if using a different arch
       pkgs = import nixpkgs { inherit system; config.allowUnfree = true; };
     in {
-      nixosConfigurations.my-hostname = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.lima-laptop = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
           ./configuration.nix
