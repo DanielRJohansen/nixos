@@ -19,6 +19,11 @@
           ./configuration.nix
           home-manager.nixosModules.home-manager
         ];
+        config = {
+          # Reference the hardware configuration file dynamically
+          imports = [ /etc/nixos/hardware-configuration.nix ];
+        };
+
       };
     };
 }
